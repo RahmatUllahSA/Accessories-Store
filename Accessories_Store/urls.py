@@ -1,6 +1,6 @@
 
 from django.contrib import admin
-from django.urls import path, include # Home app
+from django.urls import include, path # Home app  # 2 templates
 
 
 urlpatterns = [
