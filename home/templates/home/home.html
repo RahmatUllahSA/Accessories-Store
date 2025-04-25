@@ -72,14 +72,14 @@
                 <nav class="navbar navbar-vertical navbar-light bg-light align-items-start p-3">
                     <h4 class="text-dark mb-3">Categories</h4>
                     <div class="navbar-nav w-100">
-                        <a href="#earbuds" class="nav-item nav-link">Earbuds</a>
-                        <a href="#headphones" class="nav-item nav-link">Headphones</a>
-                        <a href="#airbuds" class="nav-item nav-link">Airbuds</a>
-                        <a href="#smartwatch" class="nav-item nav-link">Smart Watch</a>
-                        <a href="#pendrive" class="nav-item nav-link">Pendrive</a>
-                        <a href="#computerbox" class="nav-item nav-link">Computer Box</a>
-                        <a href="#mouse" class="nav-item nav-link">Mouse</a>
-                        <a href="#keyboard" class="nav-item nav-link">Keyboard</a>
+                        <a href="{% url 'category_products' 'earbuds' %}" class="nav-item nav-link">Earbuds</a>
+                        <a href="{% url 'category_products' 'headphones' %}" class="nav-item nav-link">Headphones</a>
+                        <a href="{% url 'category_products' 'airbuds' %}" class="nav-item nav-link">Airbuds</a>
+                        <a href="{% url 'category_products' 'smartwatch' %}" class="nav-item nav-link">Smart Watch</a>
+                        <a href="{% url 'category_products' 'pendrive' %}" class="nav-item nav-link">Pendrive</a>
+                        <a href="{% url 'category_products' 'computerbox' %}" class="nav-item nav-link">Computer Box</a>
+                        <a href="{% url 'category_products' 'mouse' %}" class="nav-item nav-link">Mouse</a>
+                        <a href="{% url 'category_products' 'keyboard' %}" class="nav-item nav-link">Keyboard</a>
                     </div>
                 </nav>
             </div>
