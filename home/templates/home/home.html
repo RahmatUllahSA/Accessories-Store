@@ -5,14 +5,24 @@
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
     <script src="{% static 'js/main.js' %}"></script>
     <link rel="icon" href="{% static 'img/favicon.ico' %}">
-    <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Hide by default */
+        #categoryMenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
 
-    <!-- Custom CSS -->
-    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+        /* Show on hover */
+        .category-wrapper:hover #categoryMenu {
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <!-- Topbar Start -->
@@ -68,8 +78,11 @@
     <!-- Navbar Start -->
     <div class="container-fluid bg-dark mb-30">
         <div class="row px-xl-5">
-            <div class="col-lg-3">
-                <nav class="navbar navbar-vertical navbar-light bg-light align-items-start p-3">
+            <div class="col-lg-3 position-relative category-wrapper">
+                <div class="bg-primary text-white py-3 px-4" style="cursor: pointer;">
+                    <h6 class="m-0"><i class="fa fa-bars mr-2"></i>Categories</h6>
+                </div>
+                <nav id="categoryMenu" class="navbar navbar-vertical navbar-light bg-light align-items-start p-3">
                     <h4 class="text-dark mb-3">Categories</h4>
                     <div class="navbar-nav w-100">
                         <a href="{% url 'category_products' 'earbuds' %}" class="nav-item nav-link">Earbuds</a>
