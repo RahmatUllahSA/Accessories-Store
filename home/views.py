@@ -14,8 +14,8 @@ def category_products(request, category_name):  # 3 category
     products = {                                     # 3 category 
         'earbuds': ['Xiaomi', 'UBL', 'JBL'],      # 3 category 
         'headphones': ['Headphone 1', 'Headphone 2', 'Headphone 3'],   # 3 category 
-        'airbuds': ['Airbud 1', 'Airbud 2', 'Airbud 3'],      # 3 category 
-        'smartwatch': ['Smart Watch 1', 'Smart Watch 2'],     # 3 category 
+        'airbuds': ['Airbud 1', 'Airbud 2', 'Airbud 3'],          # 3 category 
+        'smartwatch': ['Smart Watch 1', 'Smart Watch 2'],       # 3 category 
         'pendrive': ['Pendrive 1', 'Pendrive 2'],               # 3 category 
         'computerbox': ['Computer Box 1', 'Computer Box 2'],    # 3 category 
         'mouse': ['Mouse 1', 'Mouse 2'],                        # 3 category 
