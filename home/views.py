@@ -12,7 +12,7 @@ def home(request):                      # 1 Home app
 def category_products(request, category_name):  # 3 category 
     # ক্যাটাগরি অনুযায়ী প্রোডাক্ট টাইপ ফিল্টার করুন
     products = {                                     # 3 category 
-        'earbuds': ['Earbuds 1', 'Earbuds 2', 'Earbuds 3'],      # 3 category 
+        'earbuds': ['Xiaomi', 'UBL', 'JBL'],      # 3 category 
         'headphones': ['Headphone 1', 'Headphone 2', 'Headphone 3'],   # 3 category 
         'airbuds': ['Airbud 1', 'Airbud 2', 'Airbud 3'],      # 3 category 
         'smartwatch': ['Smart Watch 1', 'Smart Watch 2'],     # 3 category 
